@@ -27,12 +27,12 @@
 
         /* Estilos para la línea conectora lateral */
         .step-container { position: relative; }
-      .step-line {
+    .step-line {
             position: absolute;
-            left: 24px; 
-            top: 48px; 
-            /* Cambiamos de -32px a un valor que cubra el gap entre cajas */
-            bottom: -40px; 
+            left: 24px;
+            top: 48px;
+            /* Usamos h-full para que mida lo mismo que la caja de al lado */
+            height: calc(100% + 32px); 
             width: 2px;
             background-color: #e2e8f0;
             z-index: 0;
