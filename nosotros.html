@@ -5,14 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiénes Somos | Yagó</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com/"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: { brand: { blue: '#001B44', orange: '#FF8C00', accent: '#3B82F6' } },
-                    fontFamily: { poppins: ['Poppins', 'sans-serif'] }
+                    colors: {
+                        brand: {
+                            blue: '#001B44',
+                            orange: '#FF8C00',
+                            accent: '#3B82F6',
+                        }
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
                 }
             }
         }
@@ -21,21 +30,24 @@
         body { font-family: 'Poppins', sans-serif; }
         .bottom-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
         .fade-in { animation: fadeIn 0.8s ease-out; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
-<body class="bg-white text-slate-900 pb-32">
+<body class="bg-white text-slate-900 pb-24">
 
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md px-4 py-5 border-b border-slate-100">
         <div class="flex items-center justify-between">
             <a href="index.html" class="p-2 -ml-2 text-brand-blue active:scale-90 transition-transform">
-                <i class="fa-solid fa-arrow-left text-lg"></i>
+                <i class="fa-solid fa-arrow-left text-xl"></i>
             </a>
             <div class="flex items-center space-x-2">
                 <div class="w-7 h-7 bg-brand-blue rounded-lg flex items-center justify-center text-white font-bold text-xs">y!</div>
                 <span class="text-lg font-bold tracking-tight text-brand-blue">yagó<span class="text-brand-accent">!</span></span>
             </div>
-            <div class="w-8"></div>
+            <div class="w-8"></div> 
         </div>
     </header>
 
@@ -54,8 +66,10 @@
             </div>
             <h3 class="text-xl font-bold text-brand-blue mb-2">¡Hola, soy Yagó!</h3>
             <p class="text-center text-xs text-slate-500 leading-relaxed">
-                Soy la nutria que se encarga de que cada producto llegue volando a tu casa en Quito o Cuenca.
+                Soy la nutria que se encarga de que cada producto que elijas sea de la mejor calidad y llegue volando a tu casa.
             </p>
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-brand-orange/5 rounded-full blur-2xl"></div>
+            <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-brand-accent/5 rounded-full blur-2xl"></div>
         </div>
     </section>
 
@@ -66,33 +80,87 @@
                 Nuestra Historia
             </h2>
             <p class="text-slate-600 text-sm leading-relaxed">
-                Nacimos para simplificar el e-commerce en Ecuador, uniendo la red de Dropi con la confianza del pago contraentrega.
+                Yagó nació de la necesidad de simplificar el comercio electrónico. Nos dimos cuenta de que la gente no solo busca productos, busca confianza y rapidez. Por eso nos unimos a la red de Dropi para garantizar que "Un click y ya llegó" no sea solo un eslogan, sino una realidad.
             </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6">
+            <div class="flex items-start space-x-4 p-5 bg-white border border-slate-100 rounded-3xl shadow-sm">
+                <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center text-brand-accent shrink-0 text-xl">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm text-brand-blue mb-1">Rapidez Extrema</h4>
+                    <p class="text-[11px] text-slate-500">Optimizamos cada proceso logístico para que no esperes de más.</p>
+                </div>
+            </div>
+            <div class="flex items-start space-x-4 p-5 bg-white border border-slate-100 rounded-3xl shadow-sm">
+                <div class="w-12 h-12 bg-orange-50 rounded-2xl flex items-center justify-center text-brand-orange shrink-0 text-xl">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm text-brand-blue mb-1">Confianza Total</h4>
+                    <p class="text-[11px] text-slate-500">Seleccionamos proveedores premium para asegurar tu satisfacción.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-6 py-12 bg-brand-blue rounded-t-[3rem] text-white">
+        <div class="space-y-10">
+            <div class="text-center">
+                <i class="fa-solid fa-bullseye text-brand-orange text-3xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-3">Nuestra Misión</h3>
+                <p class="text-blue-100 text-xs leading-relaxed opacity-80">
+                    Brindar acceso a productos innovadores que mejoren la calidad de vida de nuestros clientes, ofreciendo una experiencia de compra segura, rápida y amigable.
+                </p>
+            </div>
+            <div class="text-center">
+                <i class="fa-solid fa-eye text-brand-accent text-3xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-3">Nuestra Visión</h3>
+                <p class="text-blue-100 text-xs leading-relaxed opacity-80">
+                    Ser la tienda online líder en Latinoamérica, reconocida por nuestra mascota Yagó y por ser el referente de eficiencia en el modelo de dropshipping.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-6 py-12 text-center">
+        <h3 class="text-lg font-bold text-brand-blue mb-6">¿Quieres saber más?</h3>
+        <div class="flex flex-col space-y-3">
+            <a href="https://wa.me/593987518380" target="_blank" class="bg-brand-orange text-white py-4 rounded-2xl font-bold text-sm shadow-lg shadow-orange-500/20 active:scale-95 transition-transform">
+                Escríbenos por WhatsApp
+            </a>
+            <a href="index.html" class="bg-slate-100 text-slate-600 py-4 rounded-2xl font-bold text-sm active:scale-95 transition-transform">
+                Volver a la tienda
+            </a>
         </div>
     </section>
 
     <nav class="fixed bottom-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-t border-slate-100 px-4 py-3 flex justify-between items-center pb-8">
-        
         <a href="index.html" class="flex flex-col items-center space-y-1 text-slate-400">
             <i class="fa-solid fa-house text-xl"></i>
             <span class="text-[10px] font-medium">Inicio</span>
         </a>
-
         <a href="index.html" class="flex flex-col items-center space-y-1 text-slate-400">
             <i class="fa-solid fa-book-open text-xl"></i>
             <span class="text-[10px] font-medium">Catálogo</span>
         </a>
-
-        <a href="TU_LINK_DE_GUIA_PROCESO" target="_blank" class="flex flex-col items-center space-y-1 text-slate-400 active:text-brand-blue">
+        <a href="TU_LINK_DE_GUIA_PROCESO" target="_blank" class="flex flex-col items-center space-y-1 text-brand-blue">
             <i class="fa-solid fa-file-shield text-xl"></i>
-            <span class="text-[10px] font-medium">Proceso</span>
+            <span class="text-[10px] font-bold">Proceso</span>
         </a>
-
-        <a href="https://wa.me/593987518380?text=%C2%A1Hola%20Yag%C3%B3!%20Ya%20hice%20mi%20compra..." target="_blank" class="flex flex-col items-center space-y-1 text-slate-400 active:text-brand-blue">
+        <a href="https://wa.me/593987518380?text=%C2%A1Hola%20Yag%C3%B3!..." target="_blank" class="flex flex-col items-center space-y-1 text-slate-400">
             <i class="fa-solid fa-truck-fast text-xl"></i>
             <span class="text-[10px] font-medium">Rastreo</span>
         </a>
     </nav>
+
+    <footer class="px-8 py-10 text-center border-t border-slate-50">
+        <p class="text-[10px] text-slate-300 font-medium tracking-[0.2em] uppercase">
+            Yagó • Un click y ya llegó
+        </p>
+    </footer>
 
 </body>
 </html>
