@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logística Yagó! | Proceso de Compra</title>
+    <link rel="icon" type="image/png" href="Favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: { blue: '#001B44', orange: '#FF8C00', accent: '#3580f7' } },
+                    fontFamily: { poppins: ['Poppins', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Poppins', sans-serif; -webkit-tap-highlight-color: transparent; }
+        .bottom-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .fade-in { animation: fadeIn 0.6s ease-out forwards; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-white text-slate-900 pb-32">
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md px-4 py-5 border-b border-slate-100">
+        <div class="flex items-center justify-between">
+            <a href="index.html" class="p-2 -ml-2 text-brand-blue active:scale-90 transition-transform">
+                <i class="fa-solid fa-arrow-left text-lg"></i>
+            </a>
+            <div class="flex items-center">
+                <img src="https://lh3.googleusercontent.com/d/1tVaC3uUs2xuMgzO8IxCTJ3k2sWDZ7a51" alt="Yagó Logo" class="h-8 w-auto object-contain">
+            </div>
+            <div class="w-8"></div>
+        </div>
+    </header>
+
+    <section class="px-6 py-10 text-center fade-in">
+        <div class="inline-flex items-center space-x-2 bg-blue-50 px-4 py-1.5 rounded-full mb-4 border border-blue-100">
+            <i class="fa-solid fa-shield-halved text-brand-accent text-[10px]"></i>
+            <span class="text-brand-accent font-bold uppercase tracking-wider text-[9px]">Compra 100% Segura</span>
+        </div>
+        <h1 class="text-2xl font-bold text-brand-blue leading-tight mb-3 px-4">Transparencia en cada paso</h1>
+        <p class="text-slate-500 text-xs leading-relaxed max-w-xs mx-auto">
+            Sabemos que la confianza es lo primero. Conoce cómo trabajamos para que tu pedido llegue perfecto.
+        </p>
+    </section>
+
+    <section class="px-5 space-y-8">
+        
+        <div class="fade-in" style="animation-delay: 0.1s;">
+            <div class="bg-white border border-slate-100 rounded-[2.5rem] overflow-hidden shadow-sm">
+                <div class="w-full h-48 bg-slate-50 flex items-center justify-center overflow-hidden border-b border-slate-50">
+                    <span class="text-slate-300 text-[10px] italic">Banner Nutria Paso 01</span>
+                </div>
+                <div class="p-7">
+                    <span class="text-brand-orange font-bold text-[10px] uppercase tracking-[0.2em] block mb-2">Paso 01</span>
+                    <h3 class="text-lg font-bold text-brand-blue mb-3">Selección y Consulta</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Elige tu producto ideal en nuestro catálogo. Una vez decidido, contáctanos directamente por WhatsApp para una asesoría personalizada donde resolveremos todas tus dudas.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fade-in" style="animation-delay: 0.2s;">
+            <div class="bg-white border border-slate-100 rounded-[2.5rem] overflow-hidden shadow-sm ring-2 ring-brand-accent/5">
+                <div class="w-full h-48 bg-slate-50 flex items-center justify-center overflow-hidden border-b border-slate-50">
+                    <span class="text-slate-300 text-[10px] italic">Banner Nutria Paso 02</span>
+                </div>
+                <div class="p-7">
+                    <span class="text-brand-orange font-bold text-[10px] uppercase tracking-[0.2em] block mb-2">Paso 02</span>
+                    <h3 class="text-lg font-bold text-brand-blue mb-3">Reserva y Validación</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Confirmamos tus datos y solicitamos un abono de <span class="font-bold text-brand-blue">$5 como Seguro de Envío</span> para reservar tu cupo logístico nacional. <span class="text-brand-accent font-semibold italic">¡Este valor se descuenta del total de tu compra!</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fade-in" style="animation-delay: 0.3s;">
+            <div class="bg-white border border-slate-100 rounded-[2.5rem] overflow-hidden shadow-sm">
+                <div class="w-full h-48 bg-slate-50 flex items-center justify-center overflow-hidden border-b border-slate-50">
+                    <span class="text-slate-300 text-[10px] italic">Banner Nutria Paso 03</span>
+                </div>
+                <div class="p-7">
+                    <span class="text-brand-orange font-bold text-[10px] uppercase tracking-[0.2em] block mb-2">Paso 03</span>
+                    <h3 class="text-lg font-bold text-brand-blue mb-3">Gestión y Despacho</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Generamos tu guía oficial a través de <span class="font-semibold text-brand-blue">Dropi</span>. Te notificaremos por WhatsApp en cuanto el paquete salga de bodega con tu fecha estimada de entrega.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fade-in" style="animation-delay: 0.4s;">
+            <div class="bg-white border border-slate-100 rounded-[2.5rem] overflow-hidden shadow-sm">
+                <div class="w-full h-48 bg-slate-50 flex items-center justify-center overflow-hidden border-b border-slate-50">
+                    <span class="text-slate-300 text-[10px] italic">Banner Nutria Paso 04</span>
+                </div>
+                <div class="p-7">
+                    <span class="text-brand-orange font-bold text-[10px] uppercase tracking-[0.2em] block mb-2">Paso 04</span>
+                    <h3 class="text-lg font-bold text-brand-blue mb-3">Entrega y Pago Final</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        ¡El momento esperado! Recibes en la puerta de tu casa, verificas que todo esté en orden y cancelas el saldo restante mediante <span class="font-bold text-brand-blue">Pago Contraentrega</span>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="px-6 py-12 mt-8 bg-slate-50 border-t border-slate-100 mb-10">
+        <div class="flex items-center space-x-3 mb-4">
+            <i class="fa-solid fa-circle-exclamation text-brand-orange"></i>
+            <h4 class="font-bold text-sm text-brand-blue uppercase tracking-tighter">Notas importantes</h4>
+        </div>
+        <div class="space-y-4">
+            <p class="text-[10px] text-slate-500 leading-relaxed">
+                • El abono de <span class="font-semibold text-brand-blue">$5</span> cubre gastos operativos de despacho. No es reembolsable si el cliente no se encuentra tras 2 intentos de entrega.
+            </p>
+            <p class="text-[10px] text-slate-500 leading-relaxed">
+                • <span class="font-semibold text-brand-blue">Tiempos de entrega:</span> Promedio nacional de 2 a 5 días laborables según ubicación.
+            </p>
+        </div>
+    </section>
+
+    <nav class="fixed bottom-0 left-0 right-0 z-50 bg-white/90 border-t border-slate-100 px-4 py-3 flex justify-between items-center pb-8 bottom-nav">
+        <a href="index.html" class="flex flex-col items-center space-y-1 text-slate-400">
+            <i class="fa-solid fa-house text-xl"></i>
+            <span class="text-[10px] font-medium">Inicio</span>
+        </a>
+        <a href="index.html#catalog" class="flex flex-col items-center space-y-1 text-slate-400">
+            <i class="fa-solid fa-book-open text-xl"></i>
+            <span class="text-[10px] font-medium">Catálogo</span>
+        </a>
+        <button class="flex flex-col items-center space-y-1 text-brand-accent">
+            <i class="fa-solid fa-file-shield text-xl"></i>
+            <span class="text-[10px] font-bold">Proceso</span>
+        </button>
+        <a href="https://wa.me/593987518380?text=Rastreo..." class="flex flex-col items-center space-y-1 text-slate-400">
+            <i class="fa-solid fa-truck-fast text-xl"></i>
+            <span class="text-[10px] font-medium">Rastreo</span>
+        </a>
+    </nav>
+
+</body>
+</html>
