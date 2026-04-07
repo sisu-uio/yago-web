@@ -27,14 +27,18 @@
 
         /* Estilos para la línea conectora lateral */
         .step-container { position: relative; }
-    .step-line {
+   .step-line {
             position: absolute;
             left: 24px;
             top: 48px;
-            /* Usamos h-full para que mida lo mismo que la caja de al lado */
-            height: calc(100% + 32px); 
+            /* Forzamos una altura fija de 420px. 
+               Esto cubre tu caja alta + los 32px de gap + 8px de 'solape' 
+               para asegurar que 'entre' en el siguiente icono. */
+            height: 420px; 
             width: 2px;
-            background-color: #e2e8f0;
+            /* Usamos el color Slate 200 pero con 70% de opacidad 
+               para que la conexión sea sutil y pro. */
+            background-color: rgba(226, 232, 240, 0.7);
             z-index: 0;
         }
         .step-container:last-child .step-line { display: none; }
