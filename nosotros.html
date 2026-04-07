@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos | Yagó</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: { blue: '#001B44', orange: '#FF8C00', accent: '#3B82F6' } },
+                    fontFamily: { poppins: ['Poppins', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .bottom-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .fade-in { animation: fadeIn 0.8s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-white text-slate-900 pb-32">
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md px-4 py-5 border-b border-slate-100">
+        <div class="flex items-center justify-between">
+            <a href="index.html" class="p-2 -ml-2 text-brand-blue active:scale-90 transition-transform">
+                <i class="fa-solid fa-arrow-left text-lg"></i>
+            </a>
+            <div class="flex items-center space-x-2">
+                <div class="w-7 h-7 bg-brand-blue rounded-lg flex items-center justify-center text-white font-bold text-xs">y!</div>
+                <span class="text-lg font-bold tracking-tight text-brand-blue">yagó<span class="text-brand-accent">!</span></span>
+            </div>
+            <div class="w-8"></div>
+        </div>
+    </header>
+
+    <section class="px-6 py-12 text-center fade-in">
+        <span class="text-brand-orange font-bold uppercase tracking-[0.2em] text-[10px] mb-3 block">Nuestra Esencia</span>
+        <h1 class="text-3xl font-bold text-brand-blue leading-tight mb-4">Más que una tienda,<br>tu aliado diario.</h1>
+        <p class="text-slate-500 text-sm leading-relaxed max-w-xs mx-auto">
+            En Yagó, creemos que la tecnología, la belleza y el hogar deben estar al alcance de un solo click.
+        </p>
+    </section>
+
+    <section class="px-6 mb-12">
+        <div class="relative bg-slate-50 rounded-[3rem] p-8 overflow-hidden flex flex-col items-center border border-slate-100">
+            <div class="w-32 h-32 bg-white rounded-full shadow-xl flex items-center justify-center mb-6 border-4 border-white">
+                <span class="text-4xl">🦦</span>
+            </div>
+            <h3 class="text-xl font-bold text-brand-blue mb-2">¡Hola, soy Yagó!</h3>
+            <p class="text-center text-xs text-slate-500 leading-relaxed">
+                Soy la nutria que se encarga de que cada producto llegue volando a tu casa en Quito o Cuenca.
+            </p>
+        </div>
+    </section>
+
+    <section class="px-6 space-y-8 mb-16">
+        <div>
+            <h2 class="text-xl font-bold text-brand-blue mb-4 flex items-center">
+                <span class="w-8 h-1 bg-brand-orange rounded-full mr-3"></span>
+                Nuestra Historia
+            </h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+                Nacimos para simplificar el e-commerce en Ecuador, uniendo la red de Dropi con la confianza del pago contraentrega.
+            </p>
+        </div>
+    </section>
+
+    <nav class="fixed bottom-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-t border-slate-100 px-4 py-3 flex justify-between items-center pb-8">
+        
+        <a href="index.html" class="flex flex-col items-center space-y-1 text-slate-400">
+            <i class="fa-solid fa-house text-xl"></i>
+            <span class="text-[10px] font-medium">Inicio</span>
+        </a>
+
+        <a href="index.html" class="flex flex-col items-center space-y-1 text-slate-400">
+            <i class="fa-solid fa-book-open text-xl"></i>
+            <span class="text-[10px] font-medium">Catálogo</span>
+        </a>
+
+        <a href="TU_LINK_DE_GUIA_PROCESO" target="_blank" class="flex flex-col items-center space-y-1 text-slate-400 active:text-brand-blue">
+            <i class="fa-solid fa-file-shield text-xl"></i>
+            <span class="text-[10px] font-medium">Proceso</span>
+        </a>
+
+        <a href="https://wa.me/593987518380?text=%C2%A1Hola%20Yag%C3%B3!%20Ya%20hice%20mi%20compra..." target="_blank" class="flex flex-col items-center space-y-1 text-slate-400 active:text-brand-blue">
+            <i class="fa-solid fa-truck-fast text-xl"></i>
+            <span class="text-[10px] font-medium">Rastreo</span>
+        </a>
+    </nav>
+
+</body>
+</html>
