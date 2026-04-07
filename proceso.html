@@ -27,11 +27,12 @@
 
         /* Estilos para la línea conectora lateral */
         .step-container { position: relative; }
-        .step-line {
+      .step-line {
             position: absolute;
-            left: 24px; /* Centrado con el icono de w-12 */
-            top: 48px; /* Empieza debajo del icono */
-            bottom: -32px; /* Se extiende hasta el siguiente contenedor */
+            left: 24px; 
+            top: 48px; 
+            /* Cambiamos de -32px a un valor que cubra el gap entre cajas */
+            bottom: -40px; 
             width: 2px;
             background-color: #e2e8f0;
             z-index: 0;
