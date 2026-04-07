@@ -13,7 +13,7 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: { brand: { blue: '#001B44', orange: '#FF8C00', accent: '#3580f7' } },
+                    colors: { brand: { blue: '#001B44', orange: '#FF8C00', accent: '#3580f7', green: '#22c55e' } },
                     fontFamily: { poppins: ['Poppins', 'sans-serif'] }
                 }
             }
@@ -24,6 +24,19 @@
         .bottom-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
         .fade-in { animation: fadeIn 0.6s ease-out forwards; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Estilos para la línea conectora lateral */
+        .step-container { position: relative; }
+        .step-line {
+            position: absolute;
+            left: 24px; /* Centrado con el icono de w-12 */
+            top: 48px; /* Empieza debajo del icono */
+            bottom: -32px; /* Se extiende hasta el siguiente contenedor */
+            width: 2px;
+            background-color: #e2e8f0;
+            z-index: 0;
+        }
+        .step-container:last-child .step-line { display: none; }
     </style>
 </head>
 <body class="bg-white text-slate-900 pb-32">
@@ -53,8 +66,14 @@
 
     <section class="px-5 space-y-8">
         
-        <div class="fade-in" style="animation-delay: 0.1s;">
-            <div class="bg-white border border-slate-100 rounded-[2.5rem] overflow-hidden shadow-sm">
+        <div class="flex items-start step-container fade-in" style="animation-delay: 0.1s;">
+            <div class="flex flex-col items-center justify-start mr-4 relative shrink-0">
+                <div class="w-12 h-12 rounded-2xl bg-brand-blue flex items-center justify-center text-white shadow-lg shadow-blue-900/20 relative z-10">
+                    <i class="fa-solid fa-comments text-lg"></i>
+                </div>
+                <div class="step-line"></div>
+            </div>
+            <div class="flex-1 bg-white border border-slate-100 rounded-[2.5rem] overflow-hidden shadow-sm">
                 <div class="w-full h-48 bg-slate-50 flex items-center justify-center overflow-hidden border-b border-slate-50">
                     <span class="text-slate-300 text-[10px] italic">Banner Nutria Paso 01</span>
                 </div>
@@ -68,8 +87,14 @@
             </div>
         </div>
 
-        <div class="fade-in" style="animation-delay: 0.2s;">
-            <div class="bg-white border border-slate-100 rounded-[2.5rem] overflow-hidden shadow-sm ring-2 ring-brand-accent/5">
+        <div class="flex items-start step-container fade-in" style="animation-delay: 0.2s;">
+            <div class="flex flex-col items-center justify-start mr-4 relative shrink-0">
+                <div class="w-12 h-12 rounded-2xl bg-brand-accent flex items-center justify-center text-white shadow-lg shadow-blue-500/20 relative z-10">
+                    <i class="fa-solid fa-file-invoice-dollar text-lg"></i>
+                </div>
+                <div class="step-line"></div>
+            </div>
+            <div class="flex-1 bg-white border border-slate-100 rounded-[2.5rem] overflow-hidden shadow-sm ring-2 ring-brand-accent/5">
                 <div class="w-full h-48 bg-slate-50 flex items-center justify-center overflow-hidden border-b border-slate-50">
                     <span class="text-slate-300 text-[10px] italic">Banner Nutria Paso 02</span>
                 </div>
@@ -83,8 +108,14 @@
             </div>
         </div>
 
-        <div class="fade-in" style="animation-delay: 0.3s;">
-            <div class="bg-white border border-slate-100 rounded-[2.5rem] overflow-hidden shadow-sm">
+        <div class="flex items-start step-container fade-in" style="animation-delay: 0.3s;">
+            <div class="flex flex-col items-center justify-start mr-4 relative shrink-0">
+                <div class="w-12 h-12 rounded-2xl bg-brand-blue flex items-center justify-center text-white shadow-lg shadow-blue-900/20 relative z-10">
+                    <i class="fa-solid fa-truck-fast text-lg"></i>
+                </div>
+                <div class="step-line"></div>
+            </div>
+            <div class="flex-1 bg-white border border-slate-100 rounded-[2.5rem] overflow-hidden shadow-sm">
                 <div class="w-full h-48 bg-slate-50 flex items-center justify-center overflow-hidden border-b border-slate-50">
                     <span class="text-slate-300 text-[10px] italic">Banner Nutria Paso 03</span>
                 </div>
@@ -98,8 +129,14 @@
             </div>
         </div>
 
-        <div class="fade-in" style="animation-delay: 0.4s;">
-            <div class="bg-white border border-slate-100 rounded-[2.5rem] overflow-hidden shadow-sm">
+        <div class="flex items-start step-container fade-in" style="animation-delay: 0.4s;">
+            <div class="flex flex-col items-center justify-start mr-4 relative shrink-0">
+                <div class="w-12 h-12 rounded-2xl bg-brand-green flex items-center justify-center text-white shadow-lg shadow-green-500/10 relative z-10">
+                    <i class="fa-solid fa-house-circle-check text-lg"></i>
+                </div>
+                <div class="step-line"></div>
+            </div>
+            <div class="flex-1 bg-white border border-slate-100 rounded-[2.5rem] overflow-hidden shadow-sm">
                 <div class="w-full h-48 bg-slate-50 flex items-center justify-center overflow-hidden border-b border-slate-50">
                     <span class="text-slate-300 text-[10px] italic">Banner Nutria Paso 04</span>
                 </div>
@@ -148,7 +185,7 @@
             <span class="text-[10px] font-medium">Rastreo</span>
         </a>
     </nav>
-     <!-- FOOTER -->
+
     <footer class="px-8 py-10 text-center border-t border-slate-50">
         <p class="text-[10px] text-slate-300 font-medium tracking-[0.2em] uppercase">
             Yagó • Logística Segura 2026
